@@ -22,7 +22,8 @@
 
   <modules>
     <module>register-server-peer1</module>
-	<module>eureka-client-peer1</module>
+	<module>hoxton-eureka-client-peer1</module>
+	<module>hoxton-eureka-client-peer2</module>
 	<module>hoxton-common-service-api</module>
   </modules>
 

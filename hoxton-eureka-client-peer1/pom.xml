@@ -4,11 +4,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>eureka-client-peer1</artifactId>
+	<artifactId>hoxton-eureka-client-peer1</artifactId>
 	<packaging>jar</packaging>
 
-	<name>eureka-client-peer1</name>
-	<description>eureka-client-peer1 project for Spring Boot</description>
+	<name>hoxton-eureka-client-peer1</name>
+	<description>hoxton-eureka-client-peer1 project for Spring Boot</description>
 
 	<parent>
 		<groupId>com.xuekui.cloud</groupId>
