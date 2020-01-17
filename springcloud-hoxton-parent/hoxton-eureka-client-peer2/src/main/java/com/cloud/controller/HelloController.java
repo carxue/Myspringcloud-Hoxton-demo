@@ -30,10 +30,11 @@ public class HelloController {
 	@RequestMapping(value="/client/hello")
 	@ResponseBody
 	public String index(){
-		List<String> instances = client.getServices();
-		instances.forEach(instance->{
-			logger.info("instance:{}",instance);
-		});
+//		List<String> instances = client.getServices();
+//		instances.forEach(instance->{
+//			logger.info("instance:{}",instance);
+//		});
+		logger.info("----------------服务提供者2将不会休眠中模拟服务故障测试断路由-------------");
 		return "Client 222 Hello World";
 	}
 	

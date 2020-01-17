@@ -35,10 +35,10 @@ public class HelloController {
 		int sleep = random.nextInt(3000);
 		logger.info("----------------服务提供者1将要休眠{"+sleep+"}S中模拟服务故障测试断路由--------------");
 		Thread.sleep(sleep);
-		List<String> instances = client.getServices();
-		instances.forEach(instance->{
-			logger.info("instance:{}",instance);
-		});
+//		List<String> instances = client.getServices();
+//		instances.forEach(instance->{
+//			logger.info("instance:{}",instance);
+//		});
 		return "Client 111 Hello World";
 	}
 	
