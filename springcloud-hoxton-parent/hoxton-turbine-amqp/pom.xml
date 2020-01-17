@@ -4,11 +4,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>hoxton-eureka-client-peer1</artifactId>
+	<artifactId>hoxton-turbine-amqp</artifactId>
 	<packaging>jar</packaging>
 
-	<name>hoxton-eureka-client-peer1</name>
-	<description>hoxton-eureka-client-peer1 project for Spring Boot</description>
+	<name>hoxton-turbine-amqp</name>
+	<description>hoxton-turbine-amqp project for Spring Boot</description>
 
 	<parent>
 		<groupId>com.xuekui.cloud</groupId>
@@ -70,21 +70,25 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!--actuator end -->
-		<!--feign和服务提供者公用接口提取 -->
+		<!--hystrix-turbine与消息代理整合 -->
 		<dependency>
-			<groupId>com.xuekui.cloud</groupId>
-			<artifactId>hoxton-common-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
 		</dependency>
-		<!--feign和服务提供者公用接口提取 end -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+		<!--hystrix-turbine end -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.netflix.hystrix</groupId>
+					<artifactId>hystrix-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -98,12 +102,6 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 		</dependency>
-		<!--hystrix-turbine与消息代理amqp整合,ribbon-consumer需要引入hystrix-amqp消息代理jar包 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
-		</dependency>
-		<!--hystrix-turbine end -->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
