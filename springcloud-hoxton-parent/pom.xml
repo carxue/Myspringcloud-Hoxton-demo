@@ -25,6 +25,7 @@
 	<module>hoxton-eureka-client-peer1</module>
 	<module>hoxton-eureka-client-peer2</module>
 	<module>hoxton-common-service-api</module>
+	<module>hoxton-feign-consumer</module>
   </modules>
 
   <dependencyManagement>
