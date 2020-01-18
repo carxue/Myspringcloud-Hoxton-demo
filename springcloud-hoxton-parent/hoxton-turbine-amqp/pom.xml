@@ -72,8 +72,9 @@
 		<!--actuator end -->
 		<!--hystrix-turbine与消息代理整合 -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-netflix-turbine-amqp</artifactId>
+		    <version>1.4.7.RELEASE</version>
 		</dependency>
 		<!--hystrix-turbine end -->
 		<dependency>

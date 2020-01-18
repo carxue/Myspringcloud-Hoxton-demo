@@ -98,12 +98,6 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 		</dependency>
-		<!--hystrix-turbine与消息代理amqp整合,ribbon-consumer需要引入hystrix-amqp消息代理jar包 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
-		</dependency>
-		<!--hystrix-turbine end -->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
