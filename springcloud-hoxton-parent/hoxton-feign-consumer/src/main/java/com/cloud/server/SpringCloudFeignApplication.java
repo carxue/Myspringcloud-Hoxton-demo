@@ -30,7 +30,7 @@ public class SpringCloudFeignApplication {
 	        registrationBean.addUrlMappings("/hystrix.stream");
 	        registrationBean.setName("HystrixMetricsStreamServlet");
 	        return registrationBean;
-	    }
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudFeignApplication.class, args);
