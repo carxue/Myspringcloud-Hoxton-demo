@@ -27,6 +27,7 @@
 	<module>hoxton-common-service-api</module>
 	<module>hoxton-feign-consumer</module>
 	<module>hoxton-turbine-amqp</module>
+	<module>hoxton-hystrix-turbine</module>
   </modules>
 
   <dependencyManagement>
