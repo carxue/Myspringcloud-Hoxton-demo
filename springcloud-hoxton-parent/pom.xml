@@ -30,6 +30,8 @@
 	<module>hoxton-hystrix-turbine</module>
 	<module>nacos-provider-peer1</module>
 	<module>nacos-provider-peer2</module>
+	<module>nacos-feign-consumer</module>
+	<module>nacos-config-client</module>
   </modules>
 
   <dependencyManagement>
