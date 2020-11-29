@@ -33,6 +33,7 @@
 	<module>nacos-feign-consumer</module>
 	<module>nacos-config-client</module>
 	<module>nacos-provider-config-peer1</module>
+	<module>soul-gateway</module>
   </modules>
 
   <dependencyManagement>
