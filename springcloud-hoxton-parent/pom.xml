@@ -34,6 +34,7 @@
 	<module>nacos-config-client</module>
 	<module>nacos-provider-config-peer1</module>
 	<module>alibaba-sentinel-demo</module>
+	<module>soul-gateway</module>
   </modules>
 
   <dependencyManagement>

@@ -16,10 +16,21 @@ public class NacosConfigController {
 
 	@Value("${my.age}")
 	private String age;
+
+	@Value("${test.rabbitmq.host}")
+	private String host;
+
+	@Value("${test.scan}")
+	private String scan;
 	
 	@RequestMapping("/nacos/config/test")
 	public String from(){
 		return this.name+":"+this.age;
+	}
+
+	@RequestMapping("/nacos/config/other/test")
+	public String from1(){
+		return this.host+":"+this.scan;
 	}
 	
 
